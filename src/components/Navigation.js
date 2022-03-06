@@ -97,9 +97,13 @@ const NavigationStyled=styled.nav`
             display:block;
                 a{
                     display:block;
-                    padding: .2rem 0;
+                    padding: .45rem 0;
                     position: relative;
                     z-index: 4;
+                    text-transform: uppercase;
+                    transition: All 0.4s   cubic-bezier(1,-0.2,.25,.95) ;
+                    font-weight: 600;
+                    letter-spacing: 1px ;
                     &:hover{
                         cursor:pointer;
 
@@ -112,7 +116,6 @@ const NavigationStyled=styled.nav`
                         width: 0;
                         height: 50%;
                         background-color:var( --primary-color);
-                        transition: All 0.4s   cubic-bezier(1,-0.2,.25,.95) ;
                         z-index: 3;
                         opacity:0.21;
                        /*  transform-origin: right; */
