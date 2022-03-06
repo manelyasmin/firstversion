@@ -10,7 +10,7 @@ function Navigation() {
         </div>
         <ul className='nav-items'>
             <li className='nav-item'>
-                <NavLink to="/home" 
+                <NavLink to="/" 
                    className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")} >Home </NavLink>
                {/*   "active-class"+(!isActive ? "unselected" : "" )
                 */} 
@@ -19,14 +19,14 @@ function Navigation() {
             </li>
 
             <li className='nav-item'>
-                <NavLink to="/about" 
+                <NavLink to="/about"  
                    className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                     About 
                 </NavLink>
             </li>
 
             <li className='nav-item'>
-                <NavLink to="/resume" 
+                <NavLink to="/resume"  
                  className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
              
                     Resume
@@ -34,14 +34,14 @@ function Navigation() {
             </li>
 
             <li className='nav-item'>
-                <NavLink to="/portfilios" 
+                <NavLink to="/portfilios"  
                 className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                     Portfilios
                 </NavLink>
             </li>
 
             <li className='nav-item'>
-                <NavLink to="/blogs" 
+                <NavLink to="/blogs"  
                   className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                     Blogs
                 </NavLink>
@@ -49,7 +49,7 @@ function Navigation() {
 
 
             <li className='nav-item'>
-                <NavLink to="/contact" 
+                <NavLink to="/contact"  
                className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                    Contact
                 </NavLink>

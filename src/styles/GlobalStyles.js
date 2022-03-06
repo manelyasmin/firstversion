@@ -14,6 +14,7 @@ const GlobalStyles=createGlobalStyle`
     --font-dark-color:#313131;
     --font-dark-color-2:#151515;
     --sidebar-dark-color:#191d2b;
+    --particle-color:"#b5838d";
 
 
 }
