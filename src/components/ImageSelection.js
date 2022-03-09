@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import resume from "../img/resume.jpg";
+import resume from "../img/ava1.png";
 import PrimaryButton from "./PrimaryButton"
 
 function ImageSelection() {
@@ -52,18 +52,19 @@ margin-top:1em;
 display:flex;
 width: 100%;
 .left-content{
-    width: 50%; 
+    width: 100%; 
     img{
          
         margin-top: 1rem; 
-        width:80%;
+        width:90%;
         object-fit: cover;
 
     }
 }
 .right-content{
-     width:50%;
-    margin-top: 10%;
+   /*  margin-top: 10%;  */
+   /*   width:50%;
+   */
    /*  width:100%; */ 
     h4{
         font-size: 2rem;
@@ -76,10 +77,11 @@ width: 100%;
 
     }
     .paragraphy{
-                padding:1rem 0;
+                padding:.5rem 0;
         }
     .about-info{
         display:flex;
+        padding-bottom: 1rem;
         .info-title{
             padding-right: 3rem;
             p{

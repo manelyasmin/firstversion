@@ -3,15 +3,18 @@ import styled from "styled-components";
 import {MainLayout} from "../styles/LayOut";
 import Title from "../components/Title";
 import ImageSelection from '../components/ImageSelection';
+import ServicesSection from '../components/ServicesSection';
+
+
+
 function AboutPage() {
   return (
   
 <MainLayout> 
     <ABoutStyled>
         <Title title={"about me"} span={"about me"}/>
-        <ImageSelection>
-
-        </ImageSelection>
+     <ImageSelection/>
+          <ServicesSection/>
     </ABoutStyled>
     </MainLayout>
             
