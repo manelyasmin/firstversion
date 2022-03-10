@@ -47,10 +47,8 @@ const ServicesSectionStyled=styled.section`
   margin-top:5rem;
 display:flex;
 justify-content:space-between;
-/* .mid-card{
-  margin :0 1.2rem;
-} */
 }
+
 
 `;
 export default ServicesSection

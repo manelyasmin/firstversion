@@ -5,6 +5,11 @@ import {MainLayout,InnerLayout} from "../styles/LayOut";
 import Title from "../components/Title";
 import PrimaryButton from "../components/PrimaryButton";
 
+import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
+ import MailIcon from '@material-ui/icons/Mail';
+ import LocationOnIcon from '@material-ui/icons/LocationOn';
+
+import ContactItem from "../components/ContactItem";
 function ContactPage() {
   return (
     <MainLayout>
@@ -48,7 +53,26 @@ function ContactPage() {
             </form>      
       </div>
        <div className="right-content">
-       
+       <ContactItem 
+       icon={<LocalPhoneIcon/>}
+       title={'Phone'}
+       contact1={'+213665036182'}
+    
+      />
+
+<ContactItem 
+       icon={<MailIcon/>}
+       title={'Email'}
+       contact1={'hammouchemanel1@gmail.com'}
+      
+      />
+
+<ContactItem 
+       icon={<LocationOnIcon />}
+       title={'Location'}
+       contact1={'Algeria'}
+      
+      />
             
        
        </div>
@@ -62,6 +86,7 @@ const ContactStyled=styled.section`
 .contact-section{
   display:grid;
   grid-template-columns:repeat(2,1fr);
+  grid-column-gap: 2rem;
   .contact-title{
     h4{
       color:var(--color-white);
@@ -103,11 +128,14 @@ const ContactStyled=styled.section`
 
       }
     }
-    .form-field f-button{
 
-    }
 
-}
+  }
+  .right-content{
+      display: flex;
+      flex-direction: column;
+      /* margin-top: 4rem; */
+  }
+} 
 `;
-
-export default ContactPage
+export default ContactPage;
