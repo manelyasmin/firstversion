@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import resume from "../img/ava1.png";
+import resume from "../img/personel.jpg";
 import PrimaryButton from "./PrimaryButton"
 
 function ImageSelection() {

@@ -25,13 +25,7 @@ function Navigation() {
                 </NavLink>
             </li>
 
-            <li className='nav-item'>
-                <NavLink to="/resume"  
-                 className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
-             
-                    Resume
-                </NavLink>
-            </li>
+         
 
             <li className='nav-item'>
                 <NavLink to="/portfilios"  
@@ -40,12 +34,7 @@ function Navigation() {
                 </NavLink>
             </li>
 
-            <li className='nav-item'>
-                <NavLink to="/blogs"  
-                  className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
-                    Blogs
-                </NavLink>
-            </li>
+        
 
 
             <li className='nav-item'>

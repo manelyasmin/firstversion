@@ -20,13 +20,13 @@ function App() {
             
             <MainContentStyled >
                   
-            {/* 
-                  <div className="lines">
+        
+              {/*     <div className="lines">
                     <div className="line-1"></div>
                     <div className="line-2"></div>
                     <div className="line-3"></div>
                     <div className="line-4"></div>
-                </div>   */}
+                </div>  */}  
                 {/* routing part  */}
           
                <Routes>
@@ -34,9 +34,9 @@ function App() {
                   
                 </Route>
                     <Route path="/about"element={<AboutPage/>}></Route>
-                    <Route path="/resume" element={<ResumePage/>}></Route>
+                   
                     <Route path="/portfilios" element={<PortfoliosPage/>}></Route>
-                    <Route path="blogs" element={<BlogPage/>}></Route>
+                   
                     <Route  path="/contact" element={<ContactPage/>}></Route>
                </Routes>
                  
@@ -60,7 +60,7 @@ position:relative;
 
  .lines{
     position:absolute;
-    min-height:100vh;
+    min-height:100%;
     width:100%;
     display:flex;
     justify-content:space-evenly;
