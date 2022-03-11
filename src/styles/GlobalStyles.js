@@ -54,7 +54,7 @@ h1{
     color:var(--white-color);
     span{
         font-size:3rem;
-        color:var(--primary-color);
+        color:var(--particle-color);
     }
 
 }

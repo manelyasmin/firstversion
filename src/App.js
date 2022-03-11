@@ -33,8 +33,10 @@ function App() {
                     <Route path="/portfilios" element={<PortfoliosPage/>}></Route>
                    
                     <Route  path="/contact" element={<ContactPage/>}></Route>
+
+                    
                </Routes> 
-                 
+                
                    
             
                 

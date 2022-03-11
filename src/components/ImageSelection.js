@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import resume from "../img/manel3.png";
+import resume from "../img/img5.jpg";
 import PrimaryButton from "./PrimaryButton"
 
 function ImageSelection() {
@@ -10,17 +10,18 @@ function ImageSelection() {
             <div className='left-content'>
             <img src={resume} alt=""/>
             </div>
-<div className='right-content'>
+        <div className='right-content'>
         <h4> I am Manel<span> Yasmine </span></h4>
         <p className='paragraphy'>
-hello i am Hammouche Manel Yasmine i am a data scientist and 
-software engineer , during my university studies,i realized several projects in computer development ,machine learning
-i had the opportuinty to learn several programming languges as well as differentes conceptes.I am curious to learn new things and enjoying working in new concepts and technologies </p>
+Hi, my name is Jasmine and I work as  data scientist/front-end developer.I hold a Bachelor’s and Master’s degree in computer science.Since I was young,
+I have always enjoyed to learn new things and enjoying working in new concepts and technologies and always curious to solve real problemes.
+Do you want to work together? Please reach out to me by e-mail.
+</p>
 
     </div>
     
 </div>
- <PrimaryButton title={'Download CV'}/>
+{/*  <PrimaryButton title={'Download CV'}/> */}
     </ImageSectionStyled>
   )
 }
@@ -34,7 +35,7 @@ width: 100%;
  
 .left-content{
     width: 50%; 
-    
+     
     img{
          
         margin-top: 1rem; 
@@ -59,7 +60,7 @@ width: 100%;
   
           p{
                 padding:.3em 0;
-                font-size:1.2rem;
+                font-size:1.6rem;
                 font-weight:600;
             }
             

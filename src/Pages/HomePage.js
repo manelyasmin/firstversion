@@ -6,6 +6,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import LinkedinIcon from "@material-ui/icons/LinkedIn";
 /* import Particles from "react-tsparticles";/*  */
 import Particles from "react-tsparticles";
+import PrimaryButton from "../components/PrimaryButton"
 /* import particlesOptions from "./particles.json";  */ 
 function HomePage() {
   
@@ -14,6 +15,7 @@ function HomePage() {
         <div className="particles-container"  >
         
         <Particle  />
+          
   
   </div>
        
@@ -33,6 +35,7 @@ function HomePage() {
                 <LinkedinIcon/>
               </a>
           </div>
+          <PrimaryButton title={'Download CV'}/>
         </div> 
     </HomePageStyled>
   )
@@ -42,6 +45,8 @@ const HomePageStyled=styled.header`
 width:100%;
 height:100%;
 background-color:2px solid var(--primary-color-light);
+ 
+
 .typographie{
   align-items:center;
   padding-top:40%;

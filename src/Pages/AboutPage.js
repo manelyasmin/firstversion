@@ -12,7 +12,7 @@ function AboutPage() {
   
 <MainLayout> 
     <ABoutStyled>
-        <Title title={"about me"} span={"about me"}/>
+        <Title title={"{about me}"} span={"{about me}"}/>
      <ImageSelection/>
       <ServicesSection/>
       <Skills/>

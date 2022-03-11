@@ -9,16 +9,18 @@ function PrimaryButton({title}) {
 }
 const PrimaryButtonStyled=styled.a`
 
-  background-color: var(--primary-color);
-  padding: .8rem 2.5rem;
- margin-top: -1rem;
-  margin-left: 13rem; 
-  color:white;
-  cursor: pointer;
+  background-color: var(--particle-color);
+  color:black;
+  border-radius:25px;
+  justify-content:center;
+  font-size:inherit;
+  text-transform:uppercase;
+  padding:.8rem 2.5rem;
+  margin-top:1rem;
+  cursor:pointer;
   display: inline-block;
-  font-size: inherit;
-  text-transform: uppercase;
-  position: relative;
+  text-transform:uppercase;
+  position:relative;
 transition: all .4s ease-in-out;
 &::after{
     content:"";
@@ -34,7 +36,7 @@ transition: all .4s ease-in-out;
   
     width:100%;
    
-    background-color: var(--white-color);
+    background-color: var(--primary-color);
    
 
   }
