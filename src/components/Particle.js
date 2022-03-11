@@ -10,8 +10,8 @@ function Particle() {
           canvasClassName="example"   
         
              style={{
-              position: "absolute",
-              top: "0",
+              position: "fixed",
+              top: "4rem",
               left: "0",
               height: "100%",
               width: "100%",

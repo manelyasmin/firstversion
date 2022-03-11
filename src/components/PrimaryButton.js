@@ -11,8 +11,8 @@ const PrimaryButtonStyled=styled.a`
 
   background-color: var(--primary-color);
   padding: .8rem 2.5rem;
- margin-top: 2rem;
-  margin-left: 5rem; 
+ margin-top: -1rem;
+  margin-left: 13rem; 
   color:white;
   cursor: pointer;
   display: inline-block;

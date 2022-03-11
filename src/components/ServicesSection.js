@@ -42,9 +42,10 @@ function ServicesSection() {
 
 
 const ServicesSectionStyled=styled.section`
-
+ 
 .services{
-  margin-top:5rem;
+ 
+  margin-top:2rem;
 display:flex;
 justify-content:space-between;
 }

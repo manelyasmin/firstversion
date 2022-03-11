@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const MainLayout=styled.div`
 
-    padding:5rem;
+    padding:2rem;
 `;
 
 
 export const InnerLayout=styled.div`
 
-    padding:5rem 0;
+    padding:2rem 0;
 `;

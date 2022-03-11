@@ -13,24 +13,23 @@ function ServiceCard({image,title,paragraph}) {
 }
 const ServiceCardStyled=styled.div`
 
-background-color:var(--background-dark-grey);
+background-color:transparent;
  
 border-left:1px solid var(--border-color);
 border-top:8px solid var(--border-color);
 border-right:1px solid var(--border-color);
-border-bottom:1px solid var(--border-color);
-transition:all .4s ease-in-out;
+border-bottom:8px solid var(--border-color);
+transition:all .7s ease-in-out;
  margin :1rem 1.2rem; 
   &:hover{
     border-top:8px solid var(--primary-color);
-    transform :translateY(3px);
+    transform :translateY(5px);
+   
+    
   }
 .container{
   padding:1rem;
- 
-  
-
-  h4{
+h4{
     color:var(--white-color);
     font-size: 1rem;
     padding:1rem 0;

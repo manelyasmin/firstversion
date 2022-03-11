@@ -50,16 +50,22 @@ a{
 
 h1{
 
-    font-size:4rem;
+    font-size:5rem;
     color:var(--white-color);
     span{
-        font-size:2.5rem;
+        font-size:3rem;
         color:var(--primary-color);
     }
 
 }
 
+h3{
 
+    font-size:2rem;
+    color:var(--background-light-color-2);
+     
+
+}
 
 
 `;

@@ -83,6 +83,7 @@ function ContactPage() {
 }
 
 const ContactStyled=styled.section`
+
 .contact-section{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -132,6 +133,7 @@ const ContactStyled=styled.section`
 
   }
   .right-content{
+      
       display: flex;
       flex-direction: column;
       /* margin-top: 4rem; */

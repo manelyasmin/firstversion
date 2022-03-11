@@ -18,18 +18,13 @@ function App() {
         <div className="App">
             <SideBar/>
             
-            <MainContentStyled >
+            <MainContentStyled > 
                   
         
-              {/*     <div className="lines">
-                    <div className="line-1"></div>
-                    <div className="line-2"></div>
-                    <div className="line-3"></div>
-                    <div className="line-4"></div>
-                </div>  */}  
+             
                 {/* routing part  */}
           
-               <Routes>
+            <Routes>
                <Route path="/" exact element={<HomePage/>}>
                   
                 </Route>
@@ -38,14 +33,13 @@ function App() {
                     <Route path="/portfilios" element={<PortfoliosPage/>}></Route>
                    
                     <Route  path="/contact" element={<ContactPage/>}></Route>
-               </Routes>
+               </Routes> 
                  
                    
-              
-                
+            
                 
                    
-</MainContentStyled> 
+</MainContentStyled>  
         </div>
         
     );
@@ -54,11 +48,12 @@ function App() {
 
 const MainContentStyled=styled.main`
 
-margin-left:16.3rem;
-min-height: 100vh;
+/* margin-top:4rem;
+width:100%; */
+/* min-width: 100vw; */
 position:relative;
 
- .lines{
+/*  .lines{
     position:absolute;
     min-height:100%;
     width:100%;
@@ -69,7 +64,7 @@ position:relative;
         min-height:100vh;
         background-color:var(--border-color);
     }
-}  
+} */  
 `;
 
 export default App;

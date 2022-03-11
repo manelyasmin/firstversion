@@ -19,9 +19,9 @@ function HomePage() {
        
        <div className="typographie">
           <h1>Hi I am <span>Manel Yasmine</span></h1>
-          <p>
+          <h3>
           i am a data scientist and front end developer
-          </p>
+          </h3>
           <div className="icons">
               <a href="https://www.facebook.com/profile.php?id=100015130292800" className="icon i-facebook">
                 <FacebookIcon/>
@@ -40,34 +40,18 @@ function HomePage() {
 
 const HomePageStyled=styled.header`
 width:100%;
-height:100vh;
-.example.style {
-width:"80%";
-height:"80%";
-position:"absolute"
-} 
-/* 
-  #tsparticles {
- 
- canvas.style{
-   position:absolute;
- }
-  }
-
-}  */  
-/* position:relative;  */
-  
-/* .particles-container{
-  position:calc(16.3rem,width);
-}
- */
+height:100%;
+background-color:2px solid var(--primary-color-light);
 .typographie{
+  align-items:center;
+  padding-top:40%;
+   left:50%;
   position:absolute;
-  top:50%;
-  left:50%;
+  /* top:50%;
+  left:50%; */
   transform:translate(-50%,-50%);
   text-align:center;
-  width:80%;
+  width:50%;
   .icons{
     display:flex;
     justify-content:center;
@@ -87,14 +71,14 @@ position:"absolute"
         
       }
       &:hover{
-        background-color:2px solid var(--primary-color);
-        color:var(--primary-color);
+        background-color:4px solid var(--primary-color-light);
+        color:var(--primary-color-light);
      }
       //this one for the margin between icon and other
     
       //this margin for all icon is for icon and circle 
       svg{
-        margin:0.5rem;
+        margin:.5rem;
 
       }
      /*  flex-direction:column; */
@@ -104,7 +88,7 @@ position:"absolute"
    }
     .i-github{
       &:hover{
-        border:2Px solid #5f4687;
+        border:2px solid #5f4687;
         color:#5f4687;;
       }
     }
@@ -112,7 +96,7 @@ position:"absolute"
 
       .i-linkedin{
       &:hover{
-        border:2Px solid #86888a;
+        border:2px solid #86888a;
         color:#86888a;
       }
     }
@@ -120,7 +104,7 @@ position:"absolute"
 
       .i-facebook{
       &:hover{
-        border:2Px solid #4267B2;
+        border:2px solid #4267B2;
         color:#4267B2;
       }
     }

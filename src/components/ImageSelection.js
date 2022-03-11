@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import resume from "../img/personel.jpg";
+import resume from "../img/manel3.png";
 import PrimaryButton from "./PrimaryButton"
 
 function ImageSelection() {
@@ -13,34 +13,14 @@ function ImageSelection() {
 <div className='right-content'>
         <h4> I am Manel<span> Yasmine </span></h4>
         <p className='paragraphy'>
-hello i am manel yasmine i am a data scientist and 
-front end developper i enjoy </p>
-
-        <div className='about-info'>
-            <div className='info-title'>
-               <p>Full Name : </p> 
-                <p> Age : </p>
-                <p> language : </p>
-                <p> Nationality: </p>
-                <p>Location : </p>
-                <p>service: </p>
-            </div>
-
-
-
-            <div className='info'>
-               <p>: hammouche manel yasmine </p> 
-                <p>25 years old</p>
-                <p>French/English/Arabic</p>
-                <p>algerinne</p>
-                <p>Algeria</p>
-                <p>Data Scientis / Front End Developper</p>
-            </div>
+hello i am Hammouche Manel Yasmine i am a data scientist and 
+software engineer , during my university studies,i realized several projects in computer development ,machine learning
+i had the opportuinty to learn several programming languges as well as differentes conceptes.I am curious to learn new things and enjoying working in new concepts and technologies </p>
 
     </div>
-    <PrimaryButton title={'Download CV'}/>
+    
 </div>
-</div>
+ <PrimaryButton title={'Download CV'}/>
     </ImageSectionStyled>
   )
 }
@@ -51,8 +31,10 @@ const ImageSectionStyled=styled.div`
 margin-top:1em;
 display:flex;
 width: 100%;
+ 
 .left-content{
-    width: 100%; 
+    width: 50%; 
+    
     img{
          
         margin-top: 1rem; 
@@ -62,10 +44,8 @@ width: 100%;
     }
 }
 .right-content{
-   /*  margin-top: 10%;  */
-   /*   width:50%;
-   */
-   /*  width:100%; */ 
+     margin-top: 1rem; 
+  
     h4{
         font-size: 2rem;
          
@@ -76,27 +56,15 @@ width: 100%;
        
 
     }
-    .paragraphy{
-                padding:.5rem 0;
-        }
-    .about-info{
-        display:flex;
-        padding-bottom: 1rem;
-        .info-title{
-            padding-right: 3rem;
-            p{
-                font-weight: 600;
-
-            }
-
-        }
-        .info-title .info{
-            p{
+  
+          p{
                 padding:.3em 0;
+                font-size:1.2rem;
+                font-weight:600;
             }
             
 
-        }
+        
 
     }
 }

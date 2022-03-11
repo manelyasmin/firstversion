@@ -5,19 +5,18 @@ function SideBar() {
   return (
     <SideBarStyled>
 
-        <Navigation>
+         <Navigation>
 
-        </Navigation>
+        </Navigation> 
     </SideBarStyled>
   )
 }
 
 
 const SideBarStyled=styled.div`
-    width:16.3rem;
-    position: fixed;
-    height:100vh;
-    background-color: var(--sidebar-dark-color);
-
+    height:4rem;
+    
+    width:100vw;
+    background-color: transparent;
 `;
 export default SideBar;
