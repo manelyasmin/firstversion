@@ -8,36 +8,50 @@ import LinkedinIcon from "@material-ui/icons/LinkedIn";
 import Particles from "react-tsparticles";
 import PrimaryButton from "../components/PrimaryButton"
 /* import particlesOptions from "./particles.json";  */ 
+import AnimationPage from '../components/AnimationPage';
+import arrow from "../img/arrow.svg";
+
 function HomePage() {
   
   return (
+    
     <HomePageStyled  >
         <div className="particles-container"  >
         
-        <Particle  />
-          
+   {/*     <Particle  /> */}
+        
   
   </div>
-       
+  <div className="icons">
+             
+            
+             <a href="https://www.facebook.com/profile.php?id=100015130292800" className="i-facebook">
+                <FacebookIcon/>
+              </a>
+           
+             
+              <a href="https://github.com/manelyasmin" className="i-github">
+                  <GithubIcon/>
+              </a>
+           
+           
+             <a href="https://www.linkedin.com/in/manel-yasmine-hammouche-784217171/" className="i-linkedin">
+                <LinkedinIcon/>
+              </a>
+            
+             
+          </div>
+   
        <div className="typographie">
           <h1>Hi I am <span>Manel Yasmine</span></h1>
           <h3>
-          i am a data scientist and front end developer
+          i am a data scientist and software Engineering 
           </h3>
-          <div className="icons">
-              <a href="https://www.facebook.com/profile.php?id=100015130292800" className="icon i-facebook">
-                <FacebookIcon/>
-              </a>
-              <a href="https://github.com/manelyasmin" className="icon i-github">
-                  <GithubIcon/>
-              </a>
-              <a href="https://www.linkedin.com/in/manel-yasmine-hammouche-784217171/" className="icon i-linkedin">
-                <LinkedinIcon/>
-              </a>
-          </div>
-          <PrimaryButton title={'Download CV'}/>
-        </div> 
+         
+          <PrimaryButton  title={'Download CV'}  />
+        </div>   
     </HomePageStyled>
+ 
   )
 }
 
@@ -45,40 +59,80 @@ const HomePageStyled=styled.header`
 width:100%;
 height:100%;
 background-color:2px solid var(--primary-color-light);
- 
+position:relative;
+ /* @media only screen and (max-width: 830px) {
+      
 
+      }  */
 .typographie{
   align-items:center;
   padding-top:40%;
    left:50%;
-  position:absolute;
-  /* top:50%;
-  left:50%; */
+  position:absolute; 
   transform:translate(-50%,-50%);
   text-align:center;
   width:50%;
-  .icons{
-    display:flex;
+  h3{
+    font-weight:400;
+    opacity: 0.7;
+     
+  }
+   
+  
+}
+
+.icons{
+  
+    display:grid;
     justify-content:center;
-    //this margin top between icons and writing
-    margin-top:1rem;
+   position:absolute;
+   top:18rem;
+   left:2rem;
     
-    .icon{
+    .i-facebook{
       border:1px solid var(--border-color);
+       
       display:flex;
       align-items:center;
       justify-content:center;
       border-radius:50%;
       transition:all .4s ease-in-out;
       cursor:pointer;
-        &:not(:last-child){
-        margin-right:1rem;
-        
-      }
+      margin-top:1rem;
+    
+      &:hover{
+        background-color:2px solid var(--primary-color-light);
+        border:2px solid #4267B2;
+        color:#4267B2;
+      
+    }
+  }
+  .i-github{
+      border:1px solid var(--border-color);
+       
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      transition:all .4s ease-in-out;
+      cursor:pointer;
+      margin-top:1rem;
+    
       &:hover{
         background-color:4px solid var(--primary-color-light);
+        border:2px solid #5f4687;
+        color:#5f4687;
+      }
+  }
+     
+      /*   &:not(:last-child){
+        margin-right:1rem;
+        
+      } */
+   /*   &:hover{
+        background-color:4px solid var(--primary-color-light);
         color:var(--primary-color-light);
-     }
+     } */ 
       //this one for the margin between icon and other
     
       //this margin for all icon is for icon and circle 
@@ -90,31 +144,33 @@ background-color:2px solid var(--primary-color-light);
       /* 
       display:inline-block;
       */
-   }
-    .i-github{
+    } 
+  
+    .i-linkedin{
+      border:1px solid var(--border-color);
+       
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      transition:all .4s ease-in-out;
+      cursor:pointer;
+      margin-top:1rem;
+    
       &:hover{
-        border:2px solid #5f4687;
-        color:#5f4687;;
-      }
-    }
-
-
-      .i-linkedin{
-      &:hover{
+        background-color:4px solid var(--primary-color-light);
         border:2px solid #86888a;
         color:#86888a;
       }
-    }
+  }
+
+      
+     
 
 
-      .i-facebook{
-      &:hover{
-        border:2px solid #4267B2;
-        color:#4267B2;
-      }
-    }
+     
   }  
-}
+
 
 `;
 export default HomePage;

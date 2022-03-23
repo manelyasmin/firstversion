@@ -10,10 +10,11 @@ import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
  import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 import ContactItem from "../components/ContactItem";
+import AnimationPage from '../components/AnimationPage';
 function ContactPage() {
   return (
-    <MainLayout>
-    <Title title={'contact'} span={'contact'}/>
+       <MainLayout>
+    <Title title={'contact'} />
     <ContactStyled>
     <InnerLayout className={"contact-section"}>
        <div className="left-content">
@@ -79,6 +80,7 @@ function ContactPage() {
     </InnerLayout>
     </ContactStyled>
     </MainLayout>
+  
   )
 }
 

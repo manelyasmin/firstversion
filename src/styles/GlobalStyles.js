@@ -4,20 +4,13 @@ const GlobalStyles=createGlobalStyle`
 
 
 :root{
-    --primary-color:#007bff;
+    --primary-color:#577590;
     --primary-color-light:#057FFF;
     --secondary-color:#6c757d;
-    --background-dark-color:#10121a;
     --background-dark-grey:#191d2b;
-    --border-color:#2e344e;
-    --background-light-color:#f1f1f1;
-     --background-light-color:rgba(3,127,255,.3);
-    --white-color:#fff;
-    --font-light-color:#a4acc4;
-    --font-dark-color:#313131;
-    --font-dark-color-2:#151515;
-    --sidebar-dark-color:#191d2b;
-    --particle-color:#b5838d;
+    --border-color:#866e9b;
+    --background-light-color:#edf6f9;
+    --particle-color:#9a8c98;
     --scrollbar-bf-color:#383838;
     --scrollbar-thump-color:#6b6b6b;
     --scrollbar-track-color:"#383838";
@@ -36,8 +29,9 @@ const GlobalStyles=createGlobalStyle`
 }
 
 body{
-    background-color: var(--background-dark-color);
-    color:var(--font-light-color);
+    background-color:var(--background-light-color);
+    
+   /*  color:var(--font-light-color); */
 }
 
 a{
@@ -51,10 +45,16 @@ a{
 h1{
 
     font-size:5rem;
-    color:var(--white-color);
-    span{
+    color:#866e9b;
+    @media only screen and (max-width: 830px) {
         font-size:3rem;
-        color:var(--particle-color);
+      } 
+    span{
+        @media only screen and (max-width: 830px) {
+        font-size:2rem;
+      } 
+        font-size:3rem;
+        color:#f4a261;
     }
 
 }
@@ -62,7 +62,10 @@ h1{
 h3{
 
     font-size:2rem;
-    color:var(--background-light-color-2);
+    color:black;
+    @media only screen and (max-width: 830px) {
+        font-size:1rem;
+      } 
      
 
 }

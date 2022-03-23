@@ -4,7 +4,7 @@ function ServiceCard({image,title,paragraph}) {
   return (
     <ServiceCardStyled>
       <div className="container">
-          <img src={image} alt=''/>
+          <img src={image} alt='' />
           <h4>{title}</h4>
           <p>{paragraph}</p>
       </div>
@@ -29,6 +29,18 @@ transition:all .7s ease-in-out;
   }
 .container{
   padding:1rem;
+ 
+     
+  img{
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+     
+  
+
+     
+  }
 h4{
     color:var(--white-color);
     font-size: 1rem;

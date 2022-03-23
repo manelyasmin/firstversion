@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function Title({title, span}) {
+function Title({title}) {
     return (
         <TitleStyled>
-            <h2>{title} <b><span>{span}</span></b></h2>
+            <h2>{title} </h2>
         </TitleStyled>
     )
 }
@@ -13,16 +13,16 @@ const TitleStyled = styled.div`
     position: relative;
     h2{
         color: var(--white-color);
-        font-size: 3.1rem;
-        font-weight: 600;
+        font-size: 2.1rem;
+        font-weight: 400;
         text-transform: uppercase;
         position: relative;
         padding-bottom: .7rem;
         @media screen and (max-width: 496px){
-            font-size: 2.8rem;
+            font-size: 1.8rem;
         }
         @media screen and (max-width: 370px){
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         &::before{
             content: "";
@@ -44,7 +44,7 @@ const TitleStyled = styled.div`
             border-radius: 15px;
             left: 0;
         }
-        span{
+    /*     span{
             font-weight: 900;
             color: rgba(25,29,43,.44);
             font-size: 5rem;
@@ -61,7 +61,7 @@ const TitleStyled = styled.div`
             @media screen and (max-width: 370px){
                 font-size: 2rem;
             }
-        }
+        } */
     }
 `;
 

@@ -9,22 +9,22 @@ import Skills from "../components/Skills"
 
 function AboutPage() {
   return (
-  
+    
 <MainLayout> 
     <ABoutStyled>
-        <Title title={"{about me}"} span={"{about me}"}/>
+        <Title title={"about me"}/>
      <ImageSelection/>
       <ServicesSection/>
       <Skills/>
           
     </ABoutStyled>
     </MainLayout>
-            
+           
   
   )
 }
 
 const ABoutStyled=styled.section`
-
+margin-top:1em;
 `;
 export default AboutPage

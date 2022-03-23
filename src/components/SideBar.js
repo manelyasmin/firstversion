@@ -14,7 +14,7 @@ function SideBar() {
 
 
 const SideBarStyled=styled.div`
-    height:4rem;
+    height:5rem;
     
     width:100vw;
     background-color: transparent;

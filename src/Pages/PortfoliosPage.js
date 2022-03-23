@@ -4,7 +4,7 @@ import Title from "../components/Title";
  import portfolios from "../data/portfolios";
 import Menu from "../components/Menu";
  import Button from "../components/Button";
- 
+ import AnimationPage from '../components/AnimationPage';
 const allBUttons=['ALl','Animation',...portfolios.map(item=>
 item.category)];
 function PortfoliosPage() {
@@ -17,13 +17,15 @@ function PortfoliosPage() {
     setMenuItems(filterData);
   }  
   return (
+   
     <MainLayout>
-    <Title title={'portfolios'} span={'portfolios'}/>
+    <Title title={'portfolios'} />
     <InnerLayout>
       
      <Menu menuItem={menuItem} />
     </InnerLayout>
     </MainLayout>
+    
   )
 }
 

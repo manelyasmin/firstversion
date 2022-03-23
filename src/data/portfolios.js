@@ -3,10 +3,18 @@ import css2 from '../img/portImages/abalone.png';
 import react1 from '../img/portImages/HAR.png';
 import img2 from '../img/portImages/meta.png';
 import img3 from '../img/portImages/cplus.png';
-
+import web from "../img/portImages/portfolio1.png"
 const portfolios = [
     {
-        id: 1,
+        id:1,
+        category:"web",
+        image:web,
+        link1:"https://github.com/manelyasmin/portfolioReact.git",
+        title:"portfolio React",
+        text:"devloping my portfolio using reactjs"
+    },
+    {
+        id: 2,
         category: 'CSS',
         image: css1,
         link1: 'https://github.com/manelyasmin/Data_Mining.git',
@@ -15,7 +23,7 @@ const portfolios = [
         text: 'desktop application developed with javafx using unspervised classfication.The algorithm  used in this project apriori,kmeans,clarnas,kmedoids'
     },
     {
-        id: 2,
+        id: 3,
         category: 'Python',
         image: css2,
         link1: 'https://github.com/manelyasmin/Aablone.git',
@@ -24,7 +32,7 @@ const portfolios = [
         text: 'developping Abalone game and use computer vision to make 2 different intelligence artificel play '
     },
     {
-        id: 3,
+        id: 4,
         category: 'Javascript',
         image: react1,
         link1: 'https://github.com/manelyasmin/HAR.git',
@@ -33,7 +41,7 @@ const portfolios = [
         text: 'human activites recongnation for live stream'
     },
     {
-        id: 4,
+        id: 5,
         category: 'Animation',
         image: img2,
         link1: 'https://github.com/manelyasmin/MethaHeurstique.git',
@@ -42,7 +50,7 @@ const portfolios = [
         text: 'implimentation with java and javafx the methaheurstique bso and pso and genetic algorithme for solving the 3SAT problem.'
     },
     {
-        id: 5,
+        id: 6,
         category: 'Animation',
         image: img3,
         link1: 'https://github.com/manelyasmin/generative_adversiral_networks.git',

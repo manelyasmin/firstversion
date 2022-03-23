@@ -102,9 +102,13 @@ height:100%;
    
   img{
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 80px;
+  height:80px;
+  justify-content: center;
+  object-fit: fill;
+  padding-bottom: 1rem;
+  /* height: 100%; */
+ /*   object-fit: contain;  */
   background-color:var(--background-dark-color);
  
 &:hover {
