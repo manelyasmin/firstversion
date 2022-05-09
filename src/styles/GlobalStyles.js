@@ -44,15 +44,27 @@ a{
 
 h1{
 
-    font-size:5rem;
+    font-size:4.5rem;
     color:#866e9b;
-    @media only screen and (max-width: 830px) {
+     @media only screen and (max-width: 810px) {
+        font-size:4rem;
+      } 
+      @media only screen and (max-width: 600px) {
+        font-size:3.5rem;
+      } 
+      @media only screen and (max-width: 450px) {
         font-size:3rem;
       } 
     span{
-        @media only screen and (max-width: 830px) {
-        font-size:2rem;
+         @media only screen and (max-width: 810px) {
+        font-size:2.5rem;
       } 
+      @media only screen and (max-width: 600px) {
+        font-size:2.2rem;
+      }  
+      @media only screen and (max-width: 450px) {
+        font-size:1.8rem;
+      }  
         font-size:3rem;
         color:#f4a261;
     }
@@ -63,10 +75,17 @@ h3{
 
     font-size:2rem;
     color:black;
-    @media only screen and (max-width: 830px) {
-        font-size:1rem;
-      } 
-     
+    font-weight:400;
+    opacity: 0.7;
+  @media only screen and (max-width: 810px) {
+        font-size:1.8rem;
+      }   
+      @media only screen and (max-width: 600px) {
+        font-size:1.5rem;
+      }  
+     @media only screen and (max-width: 450px) {
+        font-size:.8rem;
+      }
 
 }
 

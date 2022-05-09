@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,Linking}   from 'react'
 import styled from "styled-components" 
 import Particle from '../components/Particle';
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -10,7 +10,7 @@ import PrimaryButton from "../components/PrimaryButton"
 /* import particlesOptions from "./particles.json";  */ 
 import AnimationPage from '../components/AnimationPage';
 import arrow from "../img/arrow.svg";
-
+import MailIcon from '@material-ui/icons/Mail';
 function HomePage() {
   
   return (
@@ -18,7 +18,7 @@ function HomePage() {
     <HomePageStyled  >
         <div className="particles-container"  >
         
-   {/*     <Particle  /> */}
+{/*  <Particle  />   */}
         
   
   </div>
@@ -39,16 +39,24 @@ function HomePage() {
                 <LinkedinIcon/>
               </a>
             
-             
+             <a className="i-mail"   > 
+                <MailIcon onClick={"showme "}  >
+                 
+                </MailIcon>
+                   {/* <span visible={false}> hammouchemanel1@gmail.gom </span>  */}
+              
+              </a>
           </div>
    
        <div className="typographie">
           <h1>Hi I am <span>Manel Yasmine</span></h1>
           <h3>
-          i am a data scientist and software Engineering 
+          i am a data scientist and software Engineer 
           </h3>
          
           <PrimaryButton  title={'Download CV'}  />
+         
+ 
         </div>   
     </HomePageStyled>
  
@@ -60,23 +68,26 @@ width:100%;
 height:100%;
 background-color:2px solid var(--primary-color-light);
 position:relative;
- /* @media only screen and (max-width: 830px) {
-      
-
-      }  */
+ 
 .typographie{
   align-items:center;
-  padding-top:40%;
+ /*  padding-top:40%; */
    left:50%;
   position:absolute; 
   transform:translate(-50%,-50%);
   text-align:center;
-  width:50%;
-  h3{
-    font-weight:400;
-    opacity: 0.7;
-     
-  }
+  /* width:50%; */
+  top:30vh;
+  @media only screen and (max-width: 810px) {
+ 
+top:25vh;
+    }  
+
+@media only screen and (max-width: 600px) {
+ 
+top:30vh;
+    }  
+   
    
   
 }
@@ -86,9 +97,54 @@ position:relative;
     display:grid;
     justify-content:center;
    position:absolute;
-   top:18rem;
+   top:10rem;
    left:2rem;
+   @media only screen and (max-width: 810px) {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ height:60vh;
+ width:93vw;
     
+    }   
+    @media only screen and (max-width: 600px) {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ height:70vh;
+ width:93vw;
+    
+    }   
+    @media only screen and (max-width: 484px) {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ height:70vh;
+ width:93vw;
+    
+    } 
+    .i-mail{border-radius:50%;
+       border:1px solid var(--border-color);  
+       
+       display:flex;
+      align-items:center;
+      justify-content:center;
+      
+      transition:all .4s ease-in-out;
+      cursor:pointer;
+      margin-top:1rem;
+      @media only screen and (max-width: 810px) {
+        margin-right:1rem;
+      }
+      &:hover{  
+       
+        background-color:2px solid var(--primary-color-light);
+        border:2px solid #4267B2;
+        color:#4267B2;
+        
+      
+    }
+    }
     .i-facebook{
       border:1px solid var(--border-color);
        
@@ -99,7 +155,9 @@ position:relative;
       transition:all .4s ease-in-out;
       cursor:pointer;
       margin-top:1rem;
-    
+      @media only screen and (max-width: 810px) {
+        margin-right:1rem;
+      }
       &:hover{
         background-color:2px solid var(--primary-color-light);
         border:2px solid #4267B2;
@@ -117,7 +175,9 @@ position:relative;
       transition:all .4s ease-in-out;
       cursor:pointer;
       margin-top:1rem;
-    
+      @media only screen and (max-width: 810px) {
+        margin-right:1rem;
+      }
       &:hover{
         background-color:4px solid var(--primary-color-light);
         border:2px solid #5f4687;
@@ -136,10 +196,10 @@ position:relative;
       //this one for the margin between icon and other
     
       //this margin for all icon is for icon and circle 
-      svg{
-        margin:.5rem;
+       svg{
+        margin:.8rem;
 
-      }
+      }  
      /*  flex-direction:column; */
       /* 
       display:inline-block;
@@ -156,7 +216,9 @@ position:relative;
       transition:all .4s ease-in-out;
       cursor:pointer;
       margin-top:1rem;
-    
+      @media only screen and (max-width: 810px) {
+        margin-right:1rem;
+      }
       &:hover{
         background-color:4px solid var(--primary-color-light);
         border:2px solid #86888a;

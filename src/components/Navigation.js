@@ -1,47 +1,75 @@
-import React from 'react'
+import React,{useState}  from 'react'
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 import avatar from "../img/logoHire2.png"
 import MailIcon from '@material-ui/icons/Mail';
 import bar from "../img/bars-solid.svg";
-function Navigation() {
-   
-  return (
-    <NavigationStyled>
-        
-        <div className="navigationAll">
-        <img src={avatar} alt=""/>
-        <ul className='nav-items'  >
-            <li className='nav-item'>
-                <NavLink to="/" 
-                   className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")} >{"<"}Home{"/>"} </NavLink>
-               
-               
-                    
-            </li>
+import {FaBars,FaTimes} from "react-icons/fa";
 
-            <li className='nav-item'>
+import { HeaderImg,IconEmail,NavBarContainer,NavBarWrapper,IconLogo,MenuItemLink,MenuItem,Menu ,IconopenMobile} from './Navigation.element'
+function Navigation() {
+    const [click,setClick]=useState(false);
+    const changeClick=() => {
+        setClick(!click);
+        console.log(click);
+    }
+return (<div> 
+    {/* <NavigationStyled> */}
+        
+      {/* <div className="navigationAll">  */}
+       
+      <NavBarContainer>
+          <NavBarWrapper>
+               
+        <IconLogo><HeaderImg src={avatar} /></IconLogo> 
+        <IconopenMobile onClick={changeClick}>{
+                         click ? <FaTimes/>  : <FaBars/> 
+                     } </IconopenMobile> 
+        
+        
+        {/* <ul className='nav-items'   > */}
+        <Menu click={click}>
+           {/*  <li className='nav-item'> */}
+                <MenuItem onClick={changeClick}>
+                <MenuItemLink >
+                <NavLink to="/" 
+                className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")} >{"<"}Home{"/>"} 
+                  </NavLink>
+                </MenuItemLink >
+                </MenuItem>
+               
+           {/*  </li> */}
+
+            {/* <li className='nav-item'> */}
+                <MenuItem onClick={changeClick}>
+                <MenuItemLink > 
                 <NavLink to="/about"  
-                   className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
+                className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                     {"<"}About{"/>"}
                 </NavLink>
-            </li>
+                </MenuItemLink >
+                </MenuItem>
+            {/*  </li> */}
 
          
 
-            <li className='nav-item'>
+            {/* <li className='nav-item'> */}
+            <MenuItem onClick={changeClick}><MenuItemLink >
+
                 <NavLink to="/portfilios"  
                 className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                     {"<"}Portfilios{"/>"}
-                </NavLink>
-            </li>
+                </NavLink></MenuItemLink >
+          {/*   </li> */}
+          </MenuItem>
 
         
-            <a className="i-mail" id='i-mail'>
-                <MailIcon/> <span   >hammouchemanel1@gmail.gom</span>
-              </a>
-            </ul>
-<div className="hamburger" onClick={()=>{
+         
+              </Menu>
+           {/*  </ul> */}
+         
+                     
+{/* <div className="hamburger" onClick={()=>{
     const hamburger=document.querySelector(".hamburger");
     const navItems=document.querySelector(".nav-items"); 
  console.log(navItems)
@@ -56,14 +84,16 @@ hamburger.addEventListener("click",()=>{
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
-        </div>
-          
-        </div>
-    </NavigationStyled>
+        </div> */}
+          </NavBarWrapper>
+    </NavBarContainer>
+    </div>
+        /*  </div>
+    </NavigationStyled> */
   )
 }
 
-const NavigationStyled=styled.header`
+/* const NavigationStyled=styled.header`
 background-color:transparent;
 
 .navigationAll{
@@ -109,7 +139,10 @@ background-color:transparent;
             cursor:pointer; 
              
       }
-         .hamburger.active .bar:nth-child(2) {
+     /*  .nav-items{
+          display:block;
+      } */
+       /*  .hamburger.active .bar:nth-child(2) {
             opacity:0
         }
         .hamburger.active .bar:nth-child(1){
@@ -121,12 +154,16 @@ background-color:transparent;
         
      }
 .nav-items{
-   
+    @media only screen and (min-width: 930px) {
     display:flex;
     justify-content:center;
      
     height:100%; 
     width:100%;
+    }
+    @media only screen and (max-width: 930px) {
+        display:none
+    }
 
         .i-mail{
       display:flex;
@@ -143,10 +180,10 @@ background-color:transparent;
         li{
             display:block;
             padding:1rem ;
-        
-            .activated{
+      
+            .activated{*/
         /*  background-color: var(--secondary-color); */
-            color:#f4a261;
+          /*  color:#f4a261;
         }
                 a{
                     display:block;
@@ -164,12 +201,12 @@ background-color:transparent;
                     }
                     &::before{
                         content: "";
-                        position: absolute;
+                        position: absolute;*/
                        /*  bottom: 0;
                         left: 0;
                         width: 0; */
                        /*   */
-                        background-color:var(--secondary-color);
+               /*         background-color:var(--secondary-color);
                          opacity:0.2;
                         width:0;
                         bottom:0;
@@ -191,7 +228,7 @@ background-color:transparent;
     
 }
       @media only screen and (max-width: 930px) {
-            
+             
             .nav-items.active{
                  flex-direction:column;
             
@@ -207,5 +244,5 @@ background-color:transparent;
  }
 
 
-`;
+`; */
 export default Navigation
