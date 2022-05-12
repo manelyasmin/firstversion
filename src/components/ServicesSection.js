@@ -48,6 +48,9 @@ const ServicesSectionStyled=styled.section`
   margin-top:2rem;
 display:flex;
 justify-content:space-between;
+@media (max-width:810px){
+  display:block;
+}
 }
 
 

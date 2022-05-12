@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import resume from "../img/img5.jpg";
+import resume from "../img/logoFirst.png";
 import PrimaryButton from "./PrimaryButton"
 
 function ImageSelection() {
@@ -29,36 +29,60 @@ Do you want to work together? Please reach out to me by e-mail.
 
 const ImageSectionStyled=styled.div`
 .all-content{
-margin-top:1em;
 display:flex;
+
 width: 100%;
 height:100%; 
- 
+
+@media( max-width : 810px)
+{
+    flex-direction:column;
+    width:100%;
+    height:auto;
+    
+  
+}
+
 .left-content{
    width: 50%;  
-   
+   @media( max-width : 810px)
+{
+    justify-content:center;
+    align-items:center;
+}
     img{
-         height:90Vh;
-         width:40vw;
-         /* border-radius: 50%; */
-       /*  margin-top: 1rem;  */
-      /*   width:500px;
-        height: 500px; */
-    /* object-fit: cover; */ 
+         height:100%;
+         width:100%;
+         @media( max-width : 810px)
+{
+    width:100vw;
+    height:70vh; 
+}
        
 
     }
 }
 .right-content{
     width:50%;
-    
-     margin-top: 4rem; 
+    margin-top: 4rem; 
+     /* margin-top: 4rem; 
      margin-right: 3rem;
-     margin-top:10rem;
+     margin-top:10rem; */
+ 
+     @media( max-width : 810px)
+{   width:100%;
+    margin-top: .5rem; 
+    align-self:center;
+   text-align:flex-start;
+   align-items:flex-start;
+}
     h4{
         font-size: 2rem;
         font-weight:500;
-         
+        @media( max-width : 810px)
+{      
+   text-align:center; 
+}
         span{
         font-size:2rem;
         color:var(--primary-color);
@@ -73,6 +97,7 @@ height:100%;
                 font-size:18px;
                 font-weight:400;
                 opacity: 0.8;
+ 
             }
             
 

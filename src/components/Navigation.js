@@ -1,7 +1,7 @@
 import React,{useState}  from 'react'
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
-import avatar from "../img/logoHire2.png"
+import avatar from "../img/logoFirst.png"
 import MailIcon from '@material-ui/icons/Mail';
 import bar from "../img/bars-solid.svg";
 import {FaBars,FaTimes} from "react-icons/fa";

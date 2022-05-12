@@ -18,7 +18,7 @@ function HomePage() {
     <HomePageStyled  >
         <div className="particles-container"  >
         
-{/*  <Particle  />   */}
+   <Particle  />    
         
   
   </div>

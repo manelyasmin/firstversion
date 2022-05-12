@@ -26,10 +26,11 @@ const portfolios = [
         id: 3,
         category: 'Python',
         image: css2,
-        link1: 'https://github.com/manelyasmin/Aablone.git',
+        link1: 'https://manelyasmin.github.io/avatarwebsite/',
        
-        title: 'Abalone Game',
-        text: 'developping Abalone game and use computer vision to make 2 different intelligence artificel play '
+        title: 'Avatar maker',
+        text: 'creation user interface for avatar aplication with responsive using react js ,styled-compoentes and react-router'
+         
     },
     {
         id: 4,
