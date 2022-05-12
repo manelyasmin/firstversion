@@ -10,7 +10,7 @@ function PrimaryButton({title}) {
     ); 
   }*/
   return (
-    <PrimaryButtonStyled href="../ressources/ManelResume.pdf" download>
+    <PrimaryButtonStyled href="src/ressources/ManelResume.pdf" download>
         {title}
          
     </PrimaryButtonStyled>
