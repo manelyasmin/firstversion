@@ -10,7 +10,7 @@ function PrimaryButton({title}) {
     ); 
   }
   return (
-    <PrimaryButtonStyled onClick={saveFile()} href="src/ressources/ManelResume.pdf" download>
+    <PrimaryButtonStyled onClick={saveFile()} href="./ManelResume.pdf" download>
         {title}
          
     </PrimaryButtonStyled>
