@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from "styled-components";
-
+import fileServer from "file-saver";
 function PrimaryButton({title}) {
-/*   const saveFile=()=>{
+    const saveFile=()=>{
     fileServer.saveAs(
       process.env.REACT_APP_CLIENT_URL+"../ressources/ManelResume.pdf",
       "ManelResume.pdf"
 
     ); 
-  }*/
+  }
   return (
-    <PrimaryButtonStyled href="src/ressources/ManelResume.pdf" download>
+    <PrimaryButtonStyled onClick={saveFile()} href="src/ressources/ManelResume.pdf" download>
         {title}
          
     </PrimaryButtonStyled>

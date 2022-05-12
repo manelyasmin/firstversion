@@ -26,7 +26,7 @@ function App() {
              
                 {/* routing part  */}
           <AnimatePresence exitBeforeEnter>
-            <Routes  key={location.pathname} location={location}>
+            <Routes basename={process.env.PUBLIC_URL} key={location.pathname} location={location}>
                <Route path="/" exact element={<HomePage/>}>
                   
                 </Route>
