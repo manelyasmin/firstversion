@@ -32,7 +32,7 @@ return (<div>
            {/*  <li className='nav-item'> */}
                 <MenuItem onClick={changeClick}>
                 <MenuItemLink >
-                <NavLink to="/firstversion" 
+                <NavLink to="/" 
                 className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")} >{"<"}Home{"/>"} 
                   </NavLink>
                 </MenuItemLink >
