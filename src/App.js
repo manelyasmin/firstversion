@@ -27,7 +27,7 @@ function App() {
                 {/* routing part  */}
           <AnimatePresence exitBeforeEnter>
             <Routes key={location.pathname} location={location}>
-               <Route path="/" exact element={<HomePage/>}>
+               <Route path="/firstversion" exact element={<HomePage/>}>
                   
                 </Route>
                     <Route path="/about"element={<AboutPage/>}>
