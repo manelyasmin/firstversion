@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/manelyasmin/firstversion.git/static/css/main.88975cc2.css",
+    "main.js": "/manelyasmin/firstversion.git/static/js/main.3735749c.js",
+    "static/js/787.c55fdc40.chunk.js": "/manelyasmin/firstversion.git/static/js/787.c55fdc40.chunk.js",
+    "static/media/HAR.png": "/manelyasmin/firstversion.git/static/media/HAR.ffa204197aabe60adf5c.png",
+    "static/media/meta.png": "/manelyasmin/firstversion.git/static/media/meta.bf39be1b8cd75986f136.png",
+    "static/media/portfolio1.png": "/manelyasmin/firstversion.git/static/media/portfolio1.07414d33cc02a412b04f.png",
+    "static/media/abalone.png": "/manelyasmin/firstversion.git/static/media/abalone.4d2a31ef38ce6a5fa74b.png",
+    "static/media/datamining.png": "/manelyasmin/firstversion.git/static/media/datamining.d2c76657b257fda52818.png",
+    "static/media/cplus.png": "/manelyasmin/firstversion.git/static/media/cplus.b568d4b2973b1f759914.png",
+    "static/media/logoFirst.png": "/manelyasmin/firstversion.git/static/media/logoFirst.66a2f4eaadd5d6a6d5e7.png",
+    "static/media/flask.svg": "/manelyasmin/firstversion.git/static/media/flask.0eabf7e7b579578090f552335f294e0f.svg",
+    "static/media/logoHire2.png": "/manelyasmin/firstversion.git/static/media/logoHire2.9f5c565d5d811ed94680.png",
+    "static/media/mongo.svg": "/manelyasmin/firstversion.git/static/media/mongo.52300335cb1653f2a8fa072873a6cc17.svg",
+    "static/media/opencv.svg": "/manelyasmin/firstversion.git/static/media/opencv.7f54e50d2bf89324b96fc3bea1925060.svg",
+    "static/media/react.svg": "/manelyasmin/firstversion.git/static/media/react.0cc978f43ea437de003e85712225e83b.svg",
+    "static/media/intelligence.svg": "/manelyasmin/firstversion.git/static/media/intelligence.df68b4a23ee6fb6f3934604f646d4ec5.svg",
+    "static/media/data.svg": "/manelyasmin/firstversion.git/static/media/data.26b860bedd70ad680cafeca82dbb7721.svg",
+    "static/media/git.svg": "/manelyasmin/firstversion.git/static/media/git.8729cc4523c7d13dff3a56eb614833c6.svg",
+    "static/media/design.svg": "/manelyasmin/firstversion.git/static/media/design.4167774d285b5abb1cc8e4f9b30827ff.svg",
+    "static/media/sql.svg": "/manelyasmin/firstversion.git/static/media/sql.c8e44c297d9d4f450f38df95e651aedd.svg",
+    "static/media/java.svg": "/manelyasmin/firstversion.git/static/media/java.65e4380863bb67e6a6248b238c7774be.svg",
+    "static/media/icons8-c++.svg": "/manelyasmin/firstversion.git/static/media/icons8-c++.c2926ce8baf39e14b40727267dbfcd93.svg",
+    "static/media/python.svg": "/manelyasmin/firstversion.git/static/media/python.888cd80d31702f3cdaa2a0e2d56c436c.svg",
+    "index.html": "/manelyasmin/firstversion.git/index.html",
+    "static/media/tensorflow.svg": "/manelyasmin/firstversion.git/static/media/tensorflow.af5afeaf568d70187484c96b4ddf8347.svg",
+    "static/media/java-script.svg": "/manelyasmin/firstversion.git/static/media/java-script.76cdaa328fb65bca1ffdfbf37024aec2.svg",
+    "static/media/bars-solid.svg": "/manelyasmin/firstversion.git/static/media/bars-solid.4e6ee87028670d524f0150aedd083e23.svg",
+    "static/media/arrow.svg": "/manelyasmin/firstversion.git/static/media/arrow.e276bdd129106a04549754299eba60fc.svg",
+    "static/media/keras.svg": "/manelyasmin/firstversion.git/static/media/keras.d1649212d2b3fbd19f2de366c0085639.svg",
+    "main.88975cc2.css.map": "/manelyasmin/firstversion.git/static/css/main.88975cc2.css.map",
+    "main.3735749c.js.map": "/manelyasmin/firstversion.git/static/js/main.3735749c.js.map",
+    "787.c55fdc40.chunk.js.map": "/manelyasmin/firstversion.git/static/js/787.c55fdc40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88975cc2.css",
+    "static/js/main.3735749c.js"
+  ]
+}
